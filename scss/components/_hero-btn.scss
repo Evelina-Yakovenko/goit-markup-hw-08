@@ -1,0 +1,22 @@
+.hero__btn {
+    display: block;
+    padding: 10px 32px;
+    margin-right: auto;
+    margin-left: auto;
+    border:none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: #fff;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    @media screen and (max-width:1279px) {
+           padding: 10px 24px;;
+        }
+}

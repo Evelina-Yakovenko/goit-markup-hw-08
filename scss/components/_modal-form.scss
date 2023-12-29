@@ -1,0 +1,197 @@
+.hero-form__title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+
+    color: var(--title-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    @media screen and (max-width:1279px){
+        width: 370px;
+    }
+}
+
+.hero-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.hero-form__label {
+    margin-bottom: 4px;
+
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+
+.hero-form__wrap-icon {
+    position: relative;
+}
+
+.hero-form__input {
+    padding: 11px 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+            border-color: var(--accent-color);
+        }
+}
+
+.hero-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: var(--primary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .hero-form__input:focus + & {
+            fill: var(--accent-color);
+        }
+}
+
+.hero-form__wrapper-textarea {
+    margin-bottom: 20px;
+}
+
+.hero-form__textarea {
+   
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+            border-color: var(--accent-color);
+        }
+                @media screen and (max-width:1279px){
+                    resize: vertical;
+                    height: 120px;
+                }
+    }
+
+    .hero-form__textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    @media screen and (max-width:1279px){
+        font-size: 14px;
+        letter-spacing: 0.14px;
+    }
+        }
+
+
+.agreement {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.agreement__label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.agreement__custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    outline: 2px solid var(--title-color);
+    outline-offset: -2px;
+    border-radius: 4px;
+    margin-right: 8px;
+
+    background-color: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .agreement__checkbox:checked + & {
+         outline: var(--accent-color);
+             }
+                 .agreement__checkbox:focus+& {
+                         outline: 2px solid var(--accent-color);
+                                  }
+}
+
+.agreement__icon {
+    border-radius: 4px;
+
+    .agreement__checkbox:checked + .agreement__custom-checkbox & {
+        background-color: var(--accent-color);
+     }
+     
+}
+    
+
+.agreement__text {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+
+    @media screen and (max-width:1279px){
+    font-size: 12px;
+    letter-spacing: 0.36px;
+    }
+}
+
+.agreement__link {
+    display: inline-block;
+    margin-left: 4px;
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+
+    &:focus {
+            outline: 2px solid var(--accent-color);
+        }
+                 @media screen and (max-width:1279px) {
+                     font-size: 12px;
+                     letter-spacing: 0.36px;
+                 }
+}
+
+.hero-form__btn {
+    display: block;
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-top: 30px;
+       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            background-color: #188ce8;
+            outline: 1px solid var(--accent-color);
+        }
+                 @media screen and (max-width:1279px) {
+                     margin-top: 31px;
+                 }
+}
+
