@@ -21,6 +21,11 @@
             width: 450px ;
             height: 609px ;
         }
+                 @media screen and (max-width:479px) {
+                     width: 290px;
+                     height: auto;
+                     padding: 20px;
+                 }
 }
 
 .modal__btn {

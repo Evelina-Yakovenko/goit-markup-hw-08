@@ -78,75 +78,88 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg width="40" height="40" aria-label="відкриття мобільного меню">
-            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+          <svg
+            class="icon-menu"
+            width="40"
+            height="40"
+            aria-label="відкриття мобільного меню"
+          >
+            <use href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
+
+        <div class="mob-menu container js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="menu-toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="icon-cross"
+              width="40"
+              height="40"
+              aria-label="закриття мобільного меню"
+            >
+              <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu__nav">
+            <ul class="mob-menu__nav-list list">
+              <li class="mob-menu__nav-item">
+                <a
+                  href="./index.html"
+                  class="mob-menu__nav-link navigation__link--current link"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu__nav-item">
+                <a
+                  href="./portfolio.html"
+                  class="mob-menu__nav-link mob-menu__nav-link--port link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu__nav-item">
+                <a href="" class="mob-menu__nav-link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="mob-menu__contact list">
+            <li class="mob-menu__contact-item">
+              <a href="tel:+380961111111" class="mob-menu__contact-tel link">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-menu__contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-menu__contact-mail link"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-social list">
+            <li class="mob-social__item">
+              <a class="mob-social__link link" href="">Instagram</a>
+            </li>
+            <li class="mob-social__item mob-social__item-after">
+              <a class="mob-social__link link" href="">Twitter</a>
+            </li>
+            <li class="mob-social__item mob-social__item-after">
+              <a class="mob-social__link link" href="">Facebook</a>
+            </li>
+            <li class="mob-social__item mob-social__item-after">
+              <a class="mob-social__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <div class="mob-menu container js-menu-container" id="mobile-menu">
-        <button
-          type="button"
-          class="menu-toggle js-close-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="закриття мобільного меню">
-            <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <nav class="mob-menu__nav">
-          <ul class="mob-menu__nav-list list">
-            <li class="mob-menu__nav-item">
-              <a
-                href="./index.html"
-                class="mob-menu__nav-link mob-menu__nav-link--current link"
-                >Студія</a
-              >
-            </li>
-            <li class="mob-menu__nav-item">
-              <a href="./portfolio.html" class="mob-menu__nav-link link"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="mob-menu__nav-item">
-              <a href="" class="mob-menu__nav-link link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="mob-menu__contact list">
-          <li class="mob-menu__contact-item">
-            <a href="tel:+380961111111" class="mob-menu__contact-tel link">
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li class="mob-menu__contact-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="mob-menu__contact-mail link"
-            >
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mob-social list">
-          <li class="mob-social__item">
-            <a class="mob-social__link link" href="">Instagram</a>
-          </li>
-          <li class="mob-social__item mob-social__item-after">
-            <a class="mob-social__link link" href="">Twitter</a>
-          </li>
-          <li class="mob-social__item mob-social__item-after">
-            <a class="mob-social__link link" href="">Facebook</a>
-          </li>
-          <li class="mob-social__item mob-social__item-after">
-            <a class="mob-social__link link" href="">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
       <!--hero-->
       <section class="hero">
         <div class="container">
@@ -317,7 +330,7 @@
       </section>
 
       <!-- project -->
-      <section class="project section">
+      <section class="project">
         <div class="container">
           <h2 class="project__title">Чим ми займаємося</h2>
           <ul class="project__list list">

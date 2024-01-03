@@ -13,6 +13,10 @@
     @media screen and (max-width:1279px){
         width: 370px;
     }
+          @media screen and (max-width:479px) {
+              width: 210px;
+            font-size: 14px;
+          }
 }
 
 .hero-form__wrapper {
